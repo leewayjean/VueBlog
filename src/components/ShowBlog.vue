@@ -2,7 +2,7 @@
   <div id="show-blog" v-theme:column="'wide'">
     <h1>博客总览</h1>
     <input type="text" v-model="search" placeholder="搜索">
-    <div v-for="blog in filtedBlogs" class="single-blog">
+    <div v-for="(blog,index) in filtedBlogs" class="single-blog" :key="index">
       <router-link v-bind:to="'/blog/' +blog.id" target="_blank"><h2 v-rainbow>{{blog.title | to-uppercase}} <i class="fl">{{blog.date}}</i></h2>
       </router-link>
       <article>
