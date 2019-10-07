@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import AddBlog from './components/AddBlog.vue'
+import ShowBlog from './components/ShowBlog.vue'
 import BlogHeader from './components/BlogHeader.vue'
 // import Demo from './components/demo.vue'
 export default {
